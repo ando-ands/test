@@ -1,0 +1,185 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  width: 400px;
+  margin-top: 50px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.label {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.input-field {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+
+.column {
+  float: left;
+  width: 1000%; /* Para dos columnas, ajusta el ancho según tus necesidades */
+}
+
+/* Limpiar el float para evitar problemas de diseño */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* .form-user {display: inline-grid; justify-content: center; align-items: center; text-align: left;}
+.contenedor-terms {display: inline-grid; justify-content: center; align-items: center; text-align: left;}
+.contenedor-submitbtn {display: inline-grid; justify-content: center; align-items: center; text-align: left;}
+/* .form-creditcard {display: inline-grid; justify-content: center; align-items: center; text-align: left;} */
+
+/* .user-lastname input {margin: 0 0 10px 10px;}
+.user-phone input {margin: 0 0 10px 10px;}
+.user-birthdate input  {margin: 0 0 10px 10px;}
+.user-name input {margin: 0 0 10px 10px;} */
+
+/* .form-creditcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+} */
+
+
+/*CREDIT CARD*/
+.checkout-container {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.checkout-header {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.checkout-header h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.checkout-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.checkout-form input[type='text'] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkout-form input[type='text']:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/*User Data*/
+.container-user {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+.container-user h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-user label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-user input[type='text'],
+.form-user input[type='date'] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-user input[type='text']:focus,
+.form-user input[type='date']:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* import '../App.css'; // Importa el archivo CSS */
